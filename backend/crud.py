@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from schema import ProductUpdate, ProductCreate
-from models import ProductModel
+from schemas.schema import ProductUpdate, ProductCreate
+from models.product import ProductModel
 
 
 def get_product(db: Session, product_id: int):
